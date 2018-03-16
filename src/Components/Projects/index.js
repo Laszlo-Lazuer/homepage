@@ -6,4 +6,5 @@ class CompProjects extends Component {
   }
 }
 
+
 export default CompProjects;

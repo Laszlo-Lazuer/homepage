@@ -58,7 +58,7 @@ const Topics = ({ match }) => (
 const Header = () => (
   <Router>
     <div className='ll-header'>
-      <nav class='nav'>
+      <nav className='nav'>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
@@ -72,7 +72,7 @@ const Header = () => (
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}/>
-      <Route path="/projects" component={{Projects}}/>
+      <Route path="/projects" component={Projects}/>
     </div>
   </Router>
 )
