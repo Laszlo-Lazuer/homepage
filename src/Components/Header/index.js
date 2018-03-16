@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom';
 import './header.css';
+import CompHome from '../Home';
+import CompAbout from '../About';
+import CompProjects from '../Projects';
 
 const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
+  <CompHome />
 )
 
 const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
+  <CompAbout />
+)
+
+const Projects = () => (
+  <CompProjects />
 )
 
 const Topic = ({ match }) => (
@@ -54,12 +57,13 @@ const Topics = ({ match }) => (
 
 const Header = () => (
   <Router>
-    <div>
+    <div className='ll-header'>
       <nav class='nav'>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/topics">Topics</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
         </ul>
       </nav>
 
@@ -68,17 +72,9 @@ const Header = () => (
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}/>
+      <Route path="/projects" component={{Projects}}/>
     </div>
   </Router>
 )
-// export default BasicExample
-// class Header extends Component {
-//   render () {
-//   return  <div>
-//     <h1>Header Component</h1>
-//       <p>hello</p>
-//     </div>
-//   };
-// }
 
 export default Header;
