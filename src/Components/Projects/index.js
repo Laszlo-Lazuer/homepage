@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './projects.css';
 
 class CompProjects extends Component {
   render() {

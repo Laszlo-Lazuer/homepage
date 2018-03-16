@@ -1,0 +1,13 @@
+// Header component Styles
+
+$color-white: #fff;
+
+ol {
+  li {
+    a {
+      color: $color-white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
