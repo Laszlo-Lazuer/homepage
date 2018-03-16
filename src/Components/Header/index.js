@@ -65,6 +65,7 @@ const Header = () => (
           <li><Link to="/about">About</Link></li>
           <li><Link to="/topics">Topics</Link></li>
           <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/projects.html">test</Link></li>
         </ul>
       </nav>
 
@@ -74,6 +75,7 @@ const Header = () => (
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}/>
       <Route path="/projects" component={Projects}/>
+      <Route path="/projects.html"/>
     </div>
   </Router>
 )
