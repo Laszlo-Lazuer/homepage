@@ -58,6 +58,7 @@ const Topics = ({ match }) => (
 const Header = () => (
   <Router>
     <div className='ll-header'>
+      <p className='warn'>[WIP]</p>
       <nav className='nav'>
         <ul>
           <li><Link to="/">Home</Link></li>
